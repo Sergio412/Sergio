@@ -1,0 +1,611 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    body {
+        background: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_960_720.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .header {
+        z-index: 1000;
+        background: black;
+        position: sticky;
+        top: 0;
+    }
+    
+    .header {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .container .btn-menu,
+    .logo {
+        float: left;
+        line-height: 70px;
+    }
+    
+    .container .btn-menu label {
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .logo h1 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    
+    .container .menu {
+        float: right;
+        line-height: 70px;
+    }
+    
+    .container .menu a {
+        display: inline-block;
+        padding: 15px 10px;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+        font-size: 15px;
+    }
+    
+    .container .menu a:hover {
+        border-bottom: 2px solid #DD8D2D;
+        padding: 5px 10px;
+        border-left: 5px solid #c7c7c7;
+        background: #DD8D2D;
+    }
+    /*Fin del encabezado */
+    /*inicio*/
+    
+    .section_inicio {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+    /*fin inicio*/
+    /*efecto maquina*/
+    
+    .line {
+        position: absolute;
+        top: 100%;
+        width: 16em;
+        margin: auto;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        font-size: 30px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        ;
+    }
+    
+    .anim-typewriter {
+        animation: typewriter 4s infinite alternate steps(41), blinkTextCursor 500ms steps(41) infinite normal;
+    }
+    
+    @keyframes typewriter {
+        from {
+            width: 130%;
+        }
+        to {
+            width: 10%;
+        }
+    }
+    
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+    
+    #btn-menu {
+        display: none;
+    }
+    
+    .container-menu {
+        position: sticky;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    #btn-menu:checked~.container-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .cont-menu {
+        width: 100%;
+        max-width: 250px;
+        background: black;
+        height: 100vh;
+        position: fixed;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    
+    #btn-menu:checked~.container-menu .cont-menu {
+        transform: translateX(0%);
+    }
+    
+    .cont-menu nav {
+        transform: translateY(35%);
+    }
+    
+    .cont-menu nav a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+    
+    .cont-menu nav a:hover {
+        border-left: 5px solid #c7c7c7;
+        background: #DD8D2D;
+    }
+    
+    .cont-menu label {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    /*creacion sobre mi*/
+    
+    .sobremih2 {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+    }
+    
+    .personal {
+        position: absolute;
+        top: 100%;
+    }
+    
+    .sobremi {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 70%;
+        left: -40;
+        margin: 400px;
+    }
+    
+    .micursoh2 {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 190%;
+        left: 50%;
+    }
+    
+    .curso {
+        position: absolute;
+        top: 178%;
+    }
+    
+    .micursos {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        left: 5%;
+    }
+    
+    .cunp {
+        position: absolute;
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        left: 5%;
+        top: 290%;
+    }
+    
+    .goop {
+        position: absolute;
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        left: 5%;
+        top: 200%;
+    }
+    
+    .imagencun,
+    .imagengoogle {
+        left: 5%;
+        position: absolute;
+        width: 500px;
+        height: 400px;
+    }
+    
+    .imagengoogle {
+        top: 220%;
+    }
+    
+    .imagencun {
+        top: 305%;
+    }
+    
+    .fondomi {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        background: #1F1323;
+        top: 112%;
+        left: 0%;
+    }
+    
+    .fondocursos {
+        position: absolute;
+        width: 100%;
+        height: 190%;
+        background: rgba(18, 33, 58, 8);
+        top: 180%;
+        left: 0%;
+    }
+    
+    .fondolenguaje {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background: #1F1323;
+        top: 370%;
+        left: 0%;
+    }
+    
+    .fondoproyecto {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 33, 58, 8);
+        top: 450%;
+        left: 0%;
+    }
+    
+    .fondoiz {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background: #1F1323;
+        top: 550%;
+        left: 0%;
+    }
+    
+    .mishabih2 {
+        z-index: 1;
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 370%;
+        left: 45%;
+    }
+    
+    .lenguajes {
+        position: absolute;
+        top: 350%;
+    }
+    
+    .txtlenguaje {
+        z-index: 1;
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 315%;
+        left: 50;
+        margin: 400px;
+    }
+    
+    .imagenjava {
+        z-index: 1;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        top: 400%;
+        left: 2%;
+        background: #A8A9AD;
+        border-radius: 10px;
+        border-color: black;
+    }
+    
+    .imagenmysql {
+        z-index: 1;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        top: 400%;
+        left: 28%;
+        background: #A8A9AD;
+        border-radius: 10px;
+        border-color: black;
+    }
+    
+    .imagenhtml {
+        z-index: 1;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        top: 400%;
+        left: 54%;
+        background: #A8A9AD;
+        border-radius: 10px;
+        border-color: black;
+    }
+    
+    .imagencss {
+        z-index: 1;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        top: 400%;
+        left: 78%;
+        background: #A8A9AD;
+        border-radius: 10px;
+        border-color: black;
+    }
+    
+    .miproyectoh2 {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 5%;
+        left: 45%;
+    }
+    
+    .proyectos {
+        position: absolute;
+        top: 439%;
+    }
+    
+    .miproyecto {
+        transform: translateZ();
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 140%;
+        left: 38%;
+    }
+    /*slider*/
+    
+    .containersli {
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        margin: auto;
+        width: 800px;
+        padding: 30px;
+    }
+    
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    ul.slider {
+        position: relative;
+        width: 800px;
+        height: 300px;
+    }
+    
+    ul.slider li {
+        position: absolute;
+        left: -80px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+    }
+    
+    ul.slider li img {
+        width: 980px;
+        height: 380px;
+        object-fit: cover;
+    }
+    
+    ul.slider li:first-child {
+        opacity: 1;
+        /*Mostramos el primer <li>*/
+    }
+    
+    ul.slider li:target {
+        opacity: 1;
+        /*Mostramos el <li> del enlace que pulsemos*/
+    }
+    
+    .menusli {
+        text-align: center;
+        margin: 120px;
+    }
+    
+    .menusli li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .menusli li a {
+        z-index: 2;
+        display: inline-block;
+        background-color: gray;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 80%;
+    }
+    /*Final slider*/
+    
+    .Contacto {
+        position: absolute;
+        top: 580%;
+    }
+    
+    .micontactoh2 {
+        position: absolute;
+        top: 570%;
+        left: 40%;
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .micontactoh23 {
+        position: absolute;
+        top: 560%;
+        left: 42%;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .mensaje {
+        position: absolute;
+        top: 584%;
+        left: 0%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .llamada {
+        position: absolute;
+        top: 598%;
+        left: 0%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .correo {
+        position: absolute;
+        top: 586%;
+        left: 5%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .llamadap {
+        position: absolute;
+        top: 600%;
+        left: 5%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nombre {
+        position: absolute;
+        top: 610%;
+        left: 0%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .nombrep {
+        position: absolute;
+        top: 612%;
+        left: 5%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .inicio {
+        position: absolute;
+        top: 0%;
+    }
+    
+    .linkid {
+        position: absolute;
+        top: 610%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .ubicacion {
+        position: absolute;
+        top: 586%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .linkedin {
+        position: absolute;
+        top: 612%;
+        left: 55%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .ubicacionp {
+        position: absolute;
+        top: 587%;
+        left: 55%;
+        color: white;
+        font-size: 20px;
+    }
